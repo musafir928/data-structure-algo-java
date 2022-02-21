@@ -6,6 +6,7 @@ public class TwoSumMultiPointer {
         System.out.println(Arrays.toString(twoSumMultiPointers(new int[]{1, 2, 3, 4}, 7)));
         System.out.println(Arrays.toString(twoSumMultiPointers(new int[]{4,1,2,3}, 7)));
         System.out.println(Arrays.toString(twoSumMultiPointers(new int[]{2,11,3,4,6,7,8,9}, 7)));
+        System.out.println(Arrays.toString(twoSumMultiPointers(new int[]{4, 0, 6, 2, 6, 8, 1}, 9)));
     }
 
     public static int[] twoSumMultiPointers(int[] arr, int target) {
