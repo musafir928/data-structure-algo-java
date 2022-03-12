@@ -69,7 +69,7 @@ public class MySinglyLinkedList {
         Node ptr1=head;
         Node ptr2=head;
         for(int i=0;i<k-1;i++) {ptr2=ptr2.next;
-        if (ptr2==null) return -1;
+            if (ptr2==null) return -1;
         }
         while(ptr2.next!=null) {
             ptr1=ptr1.next;
@@ -101,7 +101,35 @@ public class MySinglyLinkedList {
             size--;
         }
     }
+    // Assignment 4 Reverse the Nodes of Singly Linked List in one pass
+    public void reverse() {
+        if (isEmpty()) return;
+        Node previous = head;
+        Node current = head.next;
+        while (current != null) {
+            Node nextNode = current.next;
+            current.next = previous;
+            previous = current;
+            current = nextNode;
+        }
+        tail = head;
+        tail.next = null;
+        head = previous;
+    }
+    // Assignment 3 Remove Duplicated values from SLL
+    // O(n) time | O(1) space - where n is the number of nodes in the Linked List
+    void removeDuplicatesFromLinkedList() {
+        Node current = head;
+        while (current != null) {
+            Node nextDistinctNode = current.next;
+            while (nextDistinctNode != null && nextDistinctNode.value == current.value){
+                nextDistinctNode = nextDistinctNode.next;
+            }
+            current.next = nextDistinctNode;
+            current = nextDistinctNode;
+        }
 
+    }
     int indexOf(int value){
         int pos=0;
         Node current=head;

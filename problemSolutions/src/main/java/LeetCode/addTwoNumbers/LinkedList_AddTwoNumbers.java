@@ -20,6 +20,14 @@ public class LinkedList_AddTwoNumbers {
             current = current.next;
 
         }
+
+        ListNode listNode1 = Solution.addTwoNumbers(l1, l2);
+        ListNode current1 = listNode;
+        while (current1 != null) {
+            System.out.println(current1.val);
+            current1 = current1.next;
+
+        }
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
