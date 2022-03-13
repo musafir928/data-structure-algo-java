@@ -29,7 +29,6 @@ public class MyQueue <T>{
         else{
             frontNode=front;
             front=front.getNext();
-
         }
         size--;
         return (T) frontNode.getValue();
