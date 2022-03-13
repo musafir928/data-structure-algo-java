@@ -1,4 +1,4 @@
-public class CustomStack<T> {
+public class MyStack<T> {
     private Node<T> bottom;
     private Node<T> top;
     private int size;
@@ -45,5 +45,5 @@ public class CustomStack<T> {
         return null;
     }
 
-    public int size() {return size();}
+    public int size() {return size;}
 }
