@@ -10,12 +10,8 @@ public class App {
         myBST.insert(18);
         myBST.insert(52);
         myBST.insert(82);
-
         myBST.insert(27);
 
-        System.out.println(myBST.root.left.right.value);
-        System.out.println(myBST.contains(32));
-        System.out.println(myBST.contains(82));
-        System.out.println(myBST.contains(47));
+        System.out.println("myBST.BFS() = " + myBST.BFS());
     }
 }
