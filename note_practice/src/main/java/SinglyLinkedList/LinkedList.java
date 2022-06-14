@@ -179,4 +179,22 @@ public class LinkedList {
         tail = tem;
     }
 
+    public void reverse1() {
+        Node prev = null;
+        Node current = head;
+
+        while(current!=null) {
+            Node next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        head = prev;
+    }
+
+    public void reverseMN(int m, int n) {
+        
+    }
+
 }
