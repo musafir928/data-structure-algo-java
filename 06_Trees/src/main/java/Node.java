@@ -3,6 +3,16 @@ public class Node {
     Node right;
     int value;
 
-    public Node(){}
-    public Node(int value){ this.value = value;}
+    public Node() {
+    }
+
+    public Node(int value) {
+        this.value = value;
+    }
+
+
+    @Override
+    public String toString() {
+        return "" + value;
+    }
 }
